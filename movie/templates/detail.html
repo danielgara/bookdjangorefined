@@ -36,7 +36,9 @@
               href="{% url 'updatereview' review.id %}">
               Update
             </a>
-            <a class="btn btn-danger" href="#">Delete</a>
+            <a class="btn btn-danger" href="{% url 'deletereview' review.id %}">
+              Delete
+            </a>
             {% endif %}
           </li>
         {% endfor %}
